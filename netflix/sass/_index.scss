@@ -1,0 +1,22 @@
+$red: #e50914;
+$dark-gray: #303030;
+$white: #ffffff;
+$black: #000000;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.divider {
+  height: 8px;
+  background-color: $dark-gray;
+  
+}

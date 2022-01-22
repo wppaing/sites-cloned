@@ -1,0 +1,38 @@
+#footer {
+  background-color: $black;
+  .right {
+    text-align: left !important;
+  }
+
+  p{
+    color: #757575;
+    margin-top: 1rem;
+  }
+  span,
+  a{
+    color: #757575;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    li {
+      color: #757575;
+      display: inline-block;
+      flex: 0 0 23%;
+      padding: 0 1rem 1rem 0;
+
+      @media screen and (max-width:768px) {
+        flex: 0 0 32%;
+      }
+      @media screen and (max-width:500px) {
+        flex: 0 0 50%;
+      }
+    }
+  }
+}

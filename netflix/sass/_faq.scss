@@ -1,0 +1,68 @@
+#faq {
+  text-align: center;
+  h1{
+    margin-bottom: 3rem;
+  }
+  .hero-container {
+    margin-top: 3rem;
+  }
+}
+
+.faq {
+  width: 60%;
+  font-size: 1.7rem;
+  margin: 0 auto;
+
+  @media screen and (max-width:1400px) {
+    width: 75%;
+  }
+  @media screen and (max-width:992px) {
+    width: 70%;
+    font-size: 1.25rem;
+  }
+  @media screen and (max-width:768px) {
+    width: 80%;
+    font-size: 1.25rem;
+  }
+  @media screen and (max-width:576px) {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width:400px) {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  &-item {
+    margin-top: 0.5rem;
+    background-color: $dark-gray;
+    padding: 1.3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+    cursor: pointer;
+
+    svg {
+      height: 1.3rem;
+      fill: $white;
+      transform: rotate(45deg);
+      transition: transform 0.3s;
+    }
+  }
+
+  &-item-sub {
+    background-color: $dark-gray;
+    margin-top: 0.1rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 0.3rem;
+    transition: max-height 0.3s ease-out;
+    p{
+      padding: 2rem;
+    }
+  }
+}
